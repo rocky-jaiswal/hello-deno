@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "lint": {
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "src/fixtures/**/*.ts"]
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "src/fixtures/**/*.ts"]
+  },
+  "nodeModulesDir": true,
+  "tasks": {
+    "start": "deno run --allow-net src/index.ts"
+  },
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.5.7"
+  },
+  "exclude": [
+    "dist/"
+  ]
+}
+  
